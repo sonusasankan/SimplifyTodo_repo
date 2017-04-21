@@ -27,13 +27,40 @@ body{
   transform: translateY(-50%);
   transform: translateX(-50%);
 }
-#addButton{
+#add{
   margin: 0 auto;
   display: block;
 }
-#add_task{
+#item{
   background-color: #fff;
   border: 0px;
   padding: 10px;
   font-size: 28px;
+}
+#todo, #task_completed{
+  float: left;
+  border: 0px;
+  width: 100%;
+  font-size: 16px;
+
+}
+/*a.secondary-content{
+  color: #afafaf;
+}
+a.secondary-content.complete, a.secondary-content.remove{
+ color: #26a69a;
+}*/
+.collection-item button{
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  padding: 0 10px;
+  color: #ccc;
+
+}
+.collection-item button:hover, .collection-item button:focus{
+  color: #26a69a;
+}
+.collection-item button.completed, .collection-item button.removed{
+   color: #26a69a;
 }
